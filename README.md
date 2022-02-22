@@ -21,15 +21,24 @@ détails d’une prestation,filtrer par date, et annuler.
 Lorsqu'une prestation est faite , elle est validée et les résultats sont importés.
 
 Auteur: Birane Baila Wane - Analyste Concepteur de SI,Architecte Logiciel et Développeur
+
 NB:Toutes les fonctionnalités sont accessibles après connexion
+
 TAF:
 1.Modélisation(6 pts)
+
   ● Diagramme Use Case
+  
   ● Diagramme de Classe
+  
   ● Diagramme de Séquence conception
+  
   ● Faire les Maquettes de l’application
+  
   ● MLD
+  
   ● Créer la Base de donnée
+
 2.Réalisation du Projet
 
 NB: Le projet est réalisé avec du JavaFx en utilisant l’architecture par couche.
