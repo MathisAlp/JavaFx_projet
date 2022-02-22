@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.DemandeRdvPatientController">
+   <children>
+      <AnchorPane prefHeight="155.0" prefWidth="550.0" style="-fx-background-color: #088A4B;">
+         <children>
+            <Text fill="WHITE" layoutX="153.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Demande de Rendez-vous">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="cboRdv" layoutX="201.0" layoutY="68.0" onAction="#handleChargeCombo" prefHeight="25.0" prefWidth="132.0" promptText="Rendez - vous" />
+            <JFXDatePicker fx:id="dateSelected" layoutX="39.0" layoutY="68.0" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: #ffffff;" />
+            <ComboBox fx:id="cboType" layoutX="377.0" layoutY="68.0" prefHeight="25.0" prefWidth="144.0" promptText="Type" />
+            <Button layoutX="232.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleAddRdv" prefHeight="25.0" prefWidth="87.0" text="Enregistrer" />
+            <ComboBox fx:id="cboSpecialite" layoutX="377.0" layoutY="68.0" prefHeight="25.0" prefWidth="144.0" promptText="Spécialité" />
+            <Text fx:id="txtError1" fill="RED" layoutX="197.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ensemble des champs obligatoire">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="155.0" prefHeight="243.0" prefWidth="550.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TableView fx:id="tblvRdv" layoutX="27.0" layoutY="37.0" prefHeight="200.0" prefWidth="500.0">
+              <columns>
+                <TableColumn fx:id="tblcDate" prefWidth="121.0" text="Date" />
+                <TableColumn fx:id="tblcType" prefWidth="151.0" text="Type" />
+                  <TableColumn fx:id="tblcEtat" prefWidth="119.0" text="Etat" />
+              </columns>
+            </TableView>
+            <Text layoutX="205.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Rendez-vous">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

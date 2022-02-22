@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.InscriptionController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #5BE8B2;">
+         <children>
+            <ImageView fitHeight="302.0" fitWidth="278.0" layoutX="10.0" layoutY="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageViews/—Pngtree—vector%20hospital%20icon_3782848.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="60.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clinique 221">
+               <font>
+                  <Font name="Broadway" size="26.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="300.0" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="500.0" prefWidth="400.0">
+               <children>
+                  <Label stylesheets="@../viewsCss/styleSheet.css" text="S'inscrire" textFill="#5be8b2">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="txtError" stylesheets="@../viewsCss/styleSheet.css" text="Veuillez remplir l'ensemble des champs" textFill="RED">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="308.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@../viewsCss/styleSheet.css">
+                     <children>
+                        <TextField fx:id="txtFnom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Nom" styleClass="tf" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtFprenom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Prenom" styleClass="tf" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="493.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@../viewsCss/styleSheet.css">
+                     <children>
+                        <TextField fx:id="txtFtelephone" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Téléphone" styleClass="tf" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <FontAwesomeIcon glyphName="MOBILE" size="2.3em" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="340.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@../viewsCss/styleSheet.css">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Text fill="#b9b6b6" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexe">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="13.0" right="20.0" />
+                           </HBox.margin>
+                        </Text>
+                        <JFXRadioButton fx:id="rdoBtnFemme" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="F">
+                           <HBox.margin>
+                              <Insets left="50.0" right="20.0" />
+                           </HBox.margin>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="rdoBtnHomme" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="M">
+                           <HBox.margin>
+                              <Insets left="80.0" />
+                           </HBox.margin>
+                        </JFXRadioButton>
+                     </children>
+                  </HBox>
+                  <Label fx:id="txtError2" stylesheets="@../viewsCss/styleSheet.css" text="Veuillez selectionner un seul champ sexe" textFill="RED">
+                     <font>
+                        <Font name="System Bold Italic" size="10.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="340.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@../viewsCss/styleSheet.css">
+                     <children>
+                        <TextField fx:id="txtFantecedant" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Antécédants Médicaux" styleClass="tf" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="373.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@../viewsCss/styleSheet.css">
+                     <children>
+                        <TextField fx:id="txtFlogin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Login" styleClass="tf" stylesheets="@../viewsCss/styleSheet.css" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <FontAwesomeIcon glyphName="USER" size="1.5em">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="438.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@../viewsCss/styleSheet.css">
+                     <children>
+                        <PasswordField fx:id="txtFpassword" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Mot de passe" styleClass="tf" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </PasswordField>
+                        <FontAwesomeIcon glyphName="LOCK" size="1.5em">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="405.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@../viewsCss/styleSheet.css">
+                     <children>
+                        <JFXButton contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" onAction="#handlePageConnexion" text="Déja membre ? Se connecter" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#handleInscription" prefHeight="39.0" prefWidth="120.0" styleClass="pink-btn" text="S'inscrire">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

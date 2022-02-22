@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="650.0" stylesheets="@../viewsCss/styleSheet.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ConnexionController">
+   <children>
+      <AnchorPane prefHeight="450.0" prefWidth="300.0" style="-fx-background-color: #5BE8B2;">
+         <children>
+            <ImageView fitHeight="302.0" fitWidth="278.0" layoutX="10.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ImageViews/—Pngtree—vector%20hospital%20icon_3782848.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="60.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clinique 221">
+               <font>
+                  <Font name="Broadway" size="26.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="300.0" prefHeight="450.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="450.0" prefWidth="350.0">
+               <children>
+                  <Label text="Se connecter" textAlignment="CENTER" textFill="#5be8b2">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="100.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Text fx:id="txtError" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Login ou Mot de passe incorrect" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="txtFlogin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Login" styleClass="tf" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <FontAwesomeIcon glyphName="USER" size="1.5em" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="373.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box">
+                     <children>
+                        <PasswordField fx:id="txtFpassword" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Mot de passe" styleClass="tf" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <FontAwesomeIcon glyphName="LOCK" size="1.5em">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="405.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box">
+                     <children>
+                        <JFXButton contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" onAction="#handlePageInscription" text="Pas de compte, Inscrivez vous !" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#handleConnexion" prefHeight="39.0" prefWidth="120.0" styleClass="pink-btn" text="Se connecter" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

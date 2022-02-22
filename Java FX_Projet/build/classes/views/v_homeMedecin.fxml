@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.HomeMedecinController">
+   <children>
+      <BorderPane layoutX="-2.0" prefHeight="600.0" prefWidth="900.0">
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #5BE8B2;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="165.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="165.0" fitWidth="200.0" layoutX="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ImageViews/icone%20medecin.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="165.0" prefHeight="435.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="161.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="txtNom" layoutX="29.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom : ">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtPrenom" layoutX="26.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom :">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txtRole" layoutX="27.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role : ">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Button layoutX="18.0" layoutY="168.0" mnemonicParsing="false" onAction="#handlePageListRdv" prefHeight="40.0" prefWidth="168.0" text="Lister rendez-vous" />
+                        <Button layoutX="18.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleVoirDosseierMedical" prefHeight="40.0" prefWidth="168.0" text="Voir dossier médical patient" />
+                        <Button layoutX="18.0" layoutY="286.0" mnemonicParsing="false" onAction="#handlePageListConsultation" prefHeight="40.0" prefWidth="168.0" text="Lister Consultations" />
+                        <Button layoutX="18.0" layoutY="345.0" mnemonicParsing="false" onAction="#handlePageConnexion" prefHeight="40.0" prefWidth="168.0" text="Déconnection" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="AnchorContent" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
