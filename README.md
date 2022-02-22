@@ -20,12 +20,13 @@ une consultation ou prestation. Le Responsable des prestations peut lister les p
 détails d’une prestation,filtrer par date, et annuler.
 Lorsqu'une prestation est faite , elle est validée et les résultats sont importés.
 
-Auteur: Birane Baila Wane - Analyste Concepteur de SI,Architecte Logiciel et Développeur
+Auteur: Birane Baila Wane - Analyste Concepteur de SI,Architecte Logiciel et Développeur @douvewane85
 
 NB:Toutes les fonctionnalités sont accessibles après connexion
 
-TAF:
-1.Modélisation(6 pts)
+Travail à faire (TAF):
+
+1.Modélisation
 
   ● Diagramme Use Case
   
